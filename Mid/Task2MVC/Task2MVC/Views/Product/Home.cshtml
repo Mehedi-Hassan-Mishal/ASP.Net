@@ -1,0 +1,23 @@
+﻿@model List<Task2MVC.Models.Product>
+@{
+    ViewBag.Title = "Home";
+   
+}
+
+<h2>List Of Products</h2>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+    </tr>
+    @foreach(var p in Model)
+            {
+
+        <tr>
+            <td>@p.Id</td>
+            <td>@p.Name</td>
+        </tr>
+            }
+</table>
+
+

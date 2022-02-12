@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>My App</title>
+    @Styles.Render("~/Content/css")
+    
+</head>
+<body>
+    <div>
+        <h1>Welcome to my App</h1>
+        @RenderBody()
+        <h2>Footer &copy; mishal.net</h2>
+    </div>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("My App", "Home", "Student", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Create", "Create", "Student")</li>
+                    <li>@Html.ActionLink("Home", "Home", "Student")</li>
+                    <li>@Html.ActionLink("Submit", "Submit", "Student")</li>
+                </ul>
+            </div>
+</body>
+</html>

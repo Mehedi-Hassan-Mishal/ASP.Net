@@ -1,0 +1,20 @@
+﻿@model Task3.Models.Student
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_studentLayout.cshtml";
+}
+
+<h2>Create</h2>
+
+<form action="/Student/Create" method="post">
+    <input type="text" name="Name" class="form-control" placeholder="Name" />
+    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "test-danger" })
+    <input type="text" name="Id" class="form-control" placeholder="Id" />
+    @Html.ValidationMessageFor(model => model.Id, "", new { @class = "test-danger" })
+    <input type="text" name="Dob" class="form-control" placeholder="Dob" />
+    @Html.ValidationMessageFor(model => model.Dob, "", new { @class = "test-danger" })
+    <input type="text" name="Email" class="form-control" placeholder="Email" />
+    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "test-danger" })<br />
+    <input type="submit" value="Create" />
+</form>
+
