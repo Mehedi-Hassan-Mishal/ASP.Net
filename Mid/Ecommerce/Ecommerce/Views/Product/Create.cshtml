@@ -1,0 +1,21 @@
+﻿
+@{
+	ViewBag.Title = "Create";
+}
+
+<div class="d-flex justify-content-center align-items-center" style="height: 85vh">
+	<div class="form-design">
+		<h4>Add Product</h4>
+		<form action="/Product/Create" method="post" enctype="multipart/form-data">
+			<input type="text" name="Name" value="" placeholder="Product Name" class="form-control my-3" />
+			<input type="text" name="Quantity" value="" placeholder="Quantity" class="form-control my-3" />
+			<input type="text" name="Price" value="" placeholder="Price" class="form-control my-3" />
+			<input type="file" name="ImageFile" value="" placeholder="Image" class="form-control my-3" />
+			<button type="submit" class="btn btn-sm btn-primary px-3">Add</button>
+		</form>
+	</div>
+</div>
+
+
+	
+
